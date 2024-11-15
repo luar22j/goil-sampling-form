@@ -3,7 +3,7 @@ import "../assets/css/global.css";
 
 const Tally = () => {
   const getFormId = () => {
-    return "31JW2l";
+    return "nP25Y5";
   };
 
   return (
