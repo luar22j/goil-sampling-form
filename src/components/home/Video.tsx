@@ -1,16 +1,12 @@
 import { useState } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
-import { useTranslation } from "react-i18next";
 
 const Video = () => {
   const [loading, setLoading] = useState(true);
-  const { i18n } = useTranslation();
 
   const handleLoadedData = () => {
     setLoading(false);
   };
-
-  const videoSrc = `/video/${i18n.language}.mp4`;
 
   return (
     <>
@@ -20,7 +16,7 @@ const Video = () => {
         </div>
       )}
       <video
-        src={videoSrc}
+        src="/video/es.mp4"
         autoPlay
         loop
         playsInline
